@@ -1,0 +1,46 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ──
+venv/
+.venv/
+env/
+.env/
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Baseline (not tracked) ──
+baseline/
+
+# ── Model checkpoints ──
+*.pt
+*.pth
+*.ckpt
+checkpoint*/
+ckpt*/
+
+# ── Logs ──
+logs/
+*.log
+events.out.tfevents.*
+
+# ── Data ──
+data/
+*.parquet
+*.csv
+*.tsv
+
+# ── OS ──
+.DS_Store
+Thumbs.db
