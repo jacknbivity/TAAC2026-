@@ -17,7 +17,7 @@
 └── baseline/         # 基线版本
 ```
 
-## 相对 baseline 的优化（仅 run.sh 已启用部分）
+## 相对 baseline 的优化
 
 ### 1. 序列上下文唤醒 (`--seqContextwakeup`)
 
@@ -43,11 +43,11 @@
 
 EST 风格多 epoch 训练：从第 2 个 epoch 起，每个 epoch 开始时将稀疏 Embedding 重置回初始快照，Dense 参数持续训练。
 
-### 6. Dense 特征编码（始终启用）
+### 6. Dense 特征编码
 
 替代 baseline 的简单 `nn.Linear + nn.LayerNorm` 投影，将用户 Dense 特征分解为**统计段 + Sum Embedding 段 + LMF Embedding 段**三部分，分别投影后用 SiLU 融合，得到更丰富的用户表示。
 
-### 7. 联合损失函数（始终启用）
+### 7. 联合损失函数
 
 在 BCE Loss 基础上叠加 Pairwise Ranking Loss：
 
