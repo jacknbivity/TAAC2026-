@@ -13,8 +13,7 @@
 ├── dataset.py        # 数据集
 ├── utils.py          # 工具函数
 ├── ns_groups.json    # NS Token 分组
-├── run.sh            # 启动脚本
-└── baseline/         # 基线版本
+└── run.sh            # 启动脚本
 ```
 
 ## 相对 baseline 的优化
